@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz - MHY YAPI MÜHENDİSLİK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <span class="phone">📞 +90 (542) 101 61 60</span>
+                        <span class="email">✉️ info@mhyyapi.com</span>
+                    </div>
+                    <div class="company-tagline">
+                        MHY YAPI MÜHENDİSLİK - Profesyonel İnşaat Hizmetleri
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <!-- Logo -->
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <img src="view/IMAGE 2025-09-10 14_06_09-Photoroom.png" alt="MHY YAPI MÜHENDİSLİK Logo">
+                        </div>
+                        <div class="logo-text">
+                            <h1>MHY YAPI MÜHENDİSLİK</h1>
+                            <p>Profesyonel İnşaat Hizmetleri</p>
+                        </div>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <!-- Navigation Links -->
+                    <div class="nav-links" id="navLinks">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                        <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+                        <a href="hizmetlerimiz.html" class="nav-link active">Hizmetlerimiz</a>
+                        <a href="projelerimiz.html" class="nav-link">Projelerimiz</a>
+                        <a href="musteri-yorumlari.html" class="nav-link">Müşteri Yorumları</a>
+                        <a href="iletisim.html" class="nav-link">İletişim</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Hizmetlerimiz</h1>
+            <p>Profesyonel inşaat ve yapı mühendisliği hizmetleri ile projelerinizi hayata geçirin. Su yalıtımı, cephe yenileme, çatı uygulamaları ve daha fazlası.</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hizmet Alanlarımız</h2>
+                <p>Çatı sektöründe 25+ yıllık deneyimimizle, her türlü çatı ihtiyacınız için profesyonel çözümler sunuyoruz.</p>
+            </div>
+
+            <div class="services-container">
+                <button class="scroll-btn scroll-left" id="scrollLeft">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"/>
+                    </svg>
+                </button>
+                <div class="services-grid" id="servicesGrid">
+                <div class="service-card active" data-service="catı-yapımı">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h3>Çatı Yapımı</h3>
+                    <p>Yeni çatı inşaatı ve montajı</p>
+                </div>
+                <div class="service-card" data-service="catı-onarımı">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>Çatı Onarımı</h3>
+                    <p>Mevcut çatıların bakım ve onarımı</p>
+                </div>
+                <div class="service-card" data-service="su-yalıtımı">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Su Yalıtımı</h3>
+                    <p>Çatı su yalıtım sistemleri</p>
+                </div>
+                <div class="service-card" data-service="catı-temizliği">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Çatı Temizliği</h3>
+                    <p>Profesyonel çatı temizlik hizmeti</p>
+                </div>
+                <div class="service-card" data-service="vinc-hizmetleri">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h18v18H3zM12 8v8m-4-4h8"/>
+                        </svg>
+                    </div>
+                    <h3>Vinç Hizmetleri</h3>
+                    <p>Profesyonel vinç kiralama ve yük kaldırma</p>
+                </div>
+                <div class="service-card" data-service="nakliyat-hizmetleri">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/>
+                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3>Nakliyat Hizmetleri</h3>
+                    <p>İnşaat malzemesi ve ağır yük taşımacılığı</p>
+                </div>
+                <div class="service-card" data-service="temel-bohcalama">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h3>Temel Bohçalama</h3>
+                    <p>Profesyonel temel bohçalama hizmetleri</p>
+                </div>
+                <div class="service-card" data-service="teras-yalitimi">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Teras Yalıtımı</h3>
+                    <p>Teras su yalıtım sistemleri</p>
+                </div>
+                <div class="service-card" data-service="dilatasyon-yalitimi">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h18v18H3zM12 8v8m-4-4h8"/>
+                        </svg>
+                    </div>
+                    <h3>Dilatasyon Yalıtımı</h3>
+                    <p>Dilatasyon derzi yalıtım uygulamaları</p>
+                </div>
+                <div class="service-card" data-service="islak-hacim-yalitimi">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Islak Hacım Yalıtımı</h3>
+                    <p>Banyo/WC su yalıtım uygulamaları</p>
+                </div>
+                <div class="service-card" data-service="perde-yalitimi">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3>Perde Yalıtımı</h3>
+                    <p>Perde su yalıtım sistemleri</p>
+                </div>
+                <div class="service-card" data-service="enjeksiyon-uygulamasi">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>Enjeksiyon Uygulaması</h3>
+                    <p>Profesyonel enjeksiyon yalıtım hizmetleri</p>
+                </div>
+                <div class="service-card" data-service="beton-silim">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Beton Silim</h3>
+                    <p>Kaba, orta ve ince beton silim işlemleri</p>
+                </div>
+                <div class="service-card" data-service="epoksi-zemin-kaplama">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h18v18H3zM12 8v8m-4-4h8"/>
+                        </svg>
+                    </div>
+                    <h3>Epoksi Zemin Kaplama</h3>
+                    <p>Portakal desen ve self leveling uygulamaları</p>
+                </div>
+                <div class="service-card" data-service="epoksi-boya">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>Epoksi Boya Uygulamaları</h3>
+                    <p>Profesyonel epoksi boya hizmetleri</p>
+                </div>
+                </div>
+                <button class="scroll-btn scroll-right" id="scrollRight">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Service Section -->
+    <section class="detailed-service">
+        <div class="container">
+            <div class="service-detail">
+                <div class="service-info">
+                    <div class="service-header">
+                        <div class="service-icon-large">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9,22 9,12 15,12 15,22"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 id="service-title">Çatı Yapımı</h3>
+                            <p id="service-subtitle">Yeni çatı inşaatı ve montajı</p>
+                        </div>
+                    </div>
+
+                    <p id="service-description">Modern teknoloji ve kaliteli malzemelerle yeni çatı inşaatı hizmeti sunuyoruz. Her türlü çatı tipi için profesyonel çözümler.</p>
+
+                    <div class="service-features" id="service-features">
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                            Kiremit çatı yapımı
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                            Metal çatı montajı
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                            Çatı kaplama
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                            Çatı konstrüksiyonu
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                            İzolasyon uygulaması
+                        </div>
+                    </div>
+
+                    <div class="service-buttons">
+                        <a href="iletisim.html" class="btn-primary">
+                            Bize Ulaş
+                            <svg class="ml-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14m-7-7l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-image">
+                    <img id="service-image" src="https://images.unsplash.com/photo-1581578731548-c6a0c3f2fcc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Çatı yapımı">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Çalışma Sürecimiz</h2>
+                <p>Projelerinizi adım adım nasıl gerçekleştirdiğimizi keşfedin. Şeffaf ve profesyonel yaklaşımımız.</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Keşif ve Analiz</h3>
+                    <p>Ücretsiz keşif yaparak çatı durumunu analiz ediyoruz</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Teklif Hazırlama</h3>
+                    <p>Detaylı proje planı ve fiyat teklifi hazırlıyoruz</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Malzeme Temini</h3>
+                    <p>Kaliteli malzemeleri tedarik ediyoruz</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Uygulama</h3>
+                    <p>Uzman ekibimizle profesyonel uygulama yapıyoruz</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <h3>Kontrol ve Teslim</h3>
+                    <p>Kalite kontrolü yaparak projeyi teslim ediyoruz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hizmet Avantajlarımız</h2>
+                <p>Çatı Dünyası olarak size sunduğumuz özel avantajlar ve güvenceler.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Garanti</h3>
+                    <p>Tüm işlerimizde 5 yıl garanti</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                            <path d="M4 22h16"/>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21l-1.25.5c-.5.2-1.28.2-1.78 0l-1.25-.5A1.25 1.25 0 0 1 4 17v-2.34"/>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21l1.25.5c.5.2 1.28.2 1.78 0l1.25-.5c.5-.23.97-.66.97-1.21v-2.34"/>
+                            <path d="M18 2H6l2 7h8l2-7Z"/>
+                            <path d="M12 9v4"/>
+                        </svg>
+                    </div>
+                    <h3>Kalite</h3>
+                    <p>En yüksek kalite standartları</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <h3>Zamanında Teslimat</h3>
+                    <p>Belirlenen sürede proje teslimi</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Uzman Ekip</h3>
+                    <p>Alanında uzman profesyonel ekip</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Hizmet Almaya Hazır mısınız?</h2>
+            <p>Ücretsiz keşif ve danışmanlık hizmetimizden yararlanın. Uzman ekibimiz size en uygun çözümü sunacaktır.</p>
+            <div class="cta-buttons">
+                <a href="tel:+902125550123" class="btn-secondary">
+                    <svg class="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    Hemen Ara: +90 (212) 555 0123
+                </a>
+                <a href="mailto:info@catidunyasi.com" class="btn-primary">
+                    <svg class="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    E-posta Gönder
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="view/IMAGE 2025-09-10 14_06_09-Photoroom.png" alt="MHY YAPI MÜHENDİSLİK Logo">
+                        </div>
+                        <div class="logo-text">
+                            <h3>MHY YAPI MÜHENDİSLİK</h3>
+                            <p>Profesyonel İnşaat Hizmetleri</p>
+                        </div>
+                    </div>
+                    <p>Türkiye'nin önde gelen yapı mühendisliği firması olarak, su yalıtımı, cephe yenileme, çatı uygulamaları ve tüm inşaat hizmetlerinde kaliteli çözümler sunuyoruz.</p>
+                    <div class="footer-features">
+                        <div class="footer-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            25+ Yıl Deneyim
+                        </div>
+                        <div class="footer-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                                <path d="M4 22h16"/>
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21l-1.25.5c-.5.2-1.28.2-1.78 0l-1.25-.5A1.25 1.25 0 0 1 4 17v-2.34"/>
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21l1.25.5c.5.2 1.28.2 1.78 0l1.25-.5c.5-.23.97-.66.97-1.21v-2.34"/>
+                                <path d="M18 2H6l2 7h8l2-7Z"/>
+                                <path d="M12 9v4"/>
+                            </svg>
+                            Sigortalı Hizmet
+                        </div>
+                        <div class="footer-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            7/24 Destek
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Kurumsal</h4>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                        <li><a href="projelerimiz.html">Projelerimiz</a></li>
+                        <li><a href="musteri-yorumlari.html">Müşteri Yorumları</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li><a href="hizmetlerimiz.html#catı-yapımı">Çatı Yapımı</a></li>
+                        <li><a href="hizmetlerimiz.html#catı-onarımı">Çatı Onarımı</a></li>
+                        <li><a href="hizmetlerimiz.html#su-yalıtımı">Su Yalıtımı</a></li>
+                        <li><a href="hizmetlerimiz.html#catı-temizliği">Çatı Temizliği</a></li>
+                        <li><a href="hizmetlerimiz.html#vinc-hizmetleri">Vinç Hizmetleri</a></li>
+                        <li><a href="hizmetlerimiz.html#nakliyat-hizmetleri">Nakliyat Hizmetleri</a></li>
+                        <li><a href="hizmetlerimiz.html#temel-bohcalama">Temel Bohçalama</a></li>
+                        <li><a href="hizmetlerimiz.html#teras-yalitimi">Teras Yalıtımı</a></li>
+                        <li><a href="hizmetlerimiz.html#islak-hacim-yalitimi">Islak Hacım Yalıtımı</a></li>
+                        <li><a href="hizmetlerimiz.html#beton-silim">Beton Silim</a></li>
+                        <li><a href="hizmetlerimiz.html#epoksi-zemin-kaplama">Epoksi Zemin Kaplama</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span class="phone-number">+90 (542) 101 61 60</span>
+                            <span class="phone-number">+90 (533) 650 22 60</span>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h5>Sosyal Medya</h5>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>© 2025 MHY YAPI MÜHENDİSLİK. Tüm hakları saklıdır.</p>
+                    <div class="footer-links">
+                        <a href="#">Gizlilik Politikası</a>
+                        <a href="#">Kullanım Koşulları</a>
+                        <a href="#">Çerez Politikası</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Services data
+        const servicesData = {
+            'catı-yapımı': {
+                title: 'Çatı Yapımı',
+                subtitle: 'Yeni çatı inşaatı ve montajı',
+                description: 'Modern teknoloji ve kaliteli malzemelerle yeni çatı inşaatı hizmeti sunuyoruz. Her türlü çatı tipi için profesyonel çözümler.',
+                features: [
+                    'Kiremit çatı yapımı',
+                    'Metal çatı montajı',
+                    'Çatı kaplama',
+                    'Çatı konstrüksiyonu',
+                    'İzolasyon uygulaması',
+                    'Su yalıtımı'
+                ],
+                price: 'm² başına fiyatlandırma',
+                duration: '1-3 hafta',
+                image: 'https://images.unsplash.com/photo-1581578731548-c6a0c3f2fcc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'catı-onarımı': {
+                title: 'Çatı Onarımı',
+                subtitle: 'Mevcut çatıların bakım ve onarımı',
+                description: 'Mevcut çatıların bakım, onarım ve yenileme hizmetleri. Uzman ekibimizle güvenilir çözümler.',
+                features: [
+                    'Çatı sızıntı onarımı',
+                    'Kiremit değişimi',
+                    'Çatı izolasyonu',
+                    'Su yalıtım onarımı',
+                    'Çatı temizliği',
+                    'Bakım hizmetleri'
+                ],
+                price: 'Proje bazlı fiyatlandırma',
+                duration: '1-2 hafta',
+                image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'catı-temizliği': {
+                title: 'Çatı Temizliği',
+                subtitle: 'Profesyonel çatı temizlik hizmeti',
+                description: 'Profesyonel çatı temizlik hizmetleri. Güvenli ve etkili temizlik çözümleri.',
+                features: [
+                    'Çatı yüzey temizliği',
+                    'Moss ve yosun temizliği',
+                    'Güvenli temizlik',
+                    'Profesyonel ekipman',
+                    'Çevre dostu ürünler',
+                    'Düzenli bakım'
+                ],
+                price: 'm² başına fiyatlandırma',
+                duration: '1-2 gün',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'cephe-yenileme': {
+                title: 'İç & Dış Cephe Yenileme',
+                subtitle: 'Boya Uygulamaları',
+                description: 'İç ve dış mekan cephe yenileme ve boya uygulamaları. Modern teknikler ile kaliteli sonuçlar.',
+                features: [
+                    'İç cephe boya',
+                    'Dış cephe boya',
+                    'Duvar hazırlığı',
+                    'Astarlama',
+                    'Kaliteli malzeme',
+                    'UV dayanımlı boyalar'
+                ],
+                price: 'm² başına fiyatlandırma',
+                duration: '1-3 hafta',
+                image: 'https://images.unsplash.com/photo-1581578731548-c6a0c3f2fcc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'catı-profil': {
+                title: 'Çatı Profil Uygulamaları',
+                subtitle: 'Metal Çatı Profilleri',
+                description: 'Çatı profil uygulamaları ve metal çatı sistemleri. Dayanıklı ve estetik çözümler.',
+                features: [
+                    'Metal çatı profilleri',
+                    'Sandviç panel',
+                    'Trapez sac',
+                    'Çatı kaplama',
+                    'Montaj hizmeti'
+                ],
+                price: 'Proje bazlı fiyatlandırma',
+                duration: '1-2 hafta',
+                image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'su-yalıtımı': {
+                title: 'Su Yalıtımı Uygulaması',
+                subtitle: 'Perde / Teras / Otopark Üstü / Çatı / Islak Hacım / Enjeksiyon',
+                description: 'Kapsamlı su yalıtımı uygulamaları. Perde, teras, otopark üstü, çatı, ıslak hacım ve enjeksiyon uygulamaları.',
+                features: [
+                    'Perde su yalıtımı',
+                    'Teras yalıtımı',
+                    'Otopark üstü yalıtım',
+                    'Çatı su yalıtımı',
+                    'Islak hacım yalıtımı',
+                    'Enjeksiyon uygulamaları'
+                ],
+                price: 'm² başına fiyatlandırma',
+                duration: '3-7 gün',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'epoksi-zemin': {
+                title: 'Epoksi Zemin Kaplama',
+                subtitle: 'Endüstriyel Zemin',
+                description: 'Epoksi zemin kaplama uygulamaları. Endüstriyel ve ticari alanlar için dayanıklı çözümler.',
+                features: [
+                    'Epoksi zemin kaplama',
+                    'Endüstriyel uygulama',
+                    'Kimyasal dayanım',
+                    'Kolay temizlik',
+                    'Uzun ömürlü'
+                ],
+                price: 'm² başına fiyatlandırma',
+                duration: '1-2 gün',
+                image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'vinc-hizmetleri': {
+                title: 'Vinç Hizmetleri',
+                subtitle: 'Profesyonel Vinç Kiralama ve Yük Kaldırma',
+                description: 'İnşaat ve endüstriyel projeler için profesyonel vinç hizmetleri. Güvenli ve etkili yük kaldırma çözümleri.',
+                features: [
+                    'Vinç kiralama hizmeti',
+                    'Yük kaldırma ve taşıma',
+                    'İnşaat vinçleri',
+                    'Endüstriyel vinç hizmetleri',
+                    'Uzman operatörler',
+                    'Güvenli operasyon'
+                ],
+                price: 'Saatlik / günlük fiyatlandırma',
+                duration: '1-7 gün',
+                image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'nakliyat-hizmetleri': {
+                title: 'Nakliyat Hizmetleri',
+                subtitle: 'İnşaat Malzemesi ve Ağır Yük Taşımacılığı',
+                description: 'İnşaat malzemesi ve ağır yük taşımacılığı hizmetleri. Şehir içi ve şehirlerarası güvenli taşıma.',
+                features: [
+                    'İnşaat malzemesi nakliyatı',
+                    'Ağır yük taşımacılığı',
+                    'Şehir içi nakliyat',
+                    'Şehirlerarası nakliyat',
+                    'Özel ekipman taşımacılığı',
+                    'Güvenli paketleme'
+                ],
+                price: 'Km / ton bazlı fiyatlandırma',
+                duration: '1-3 gün',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'temel-bohcalama': {
+                title: 'Temel Bohçalama',
+                subtitle: 'Profesyonel Temel Bohçalama Hizmetleri',
+                description: 'Temel bohçalama uygulamaları ile yapılarınızın temelini güvenli ve dayanıklı hale getiriyoruz.',
+                features: [
+                    'Temel bohçalama uygulaması',
+                    'Su yalıtım malzemeleri',
+                    'Profesyonel ekipman',
+                    'Kaliteli işçilik',
+                    'Güvenli uygulama',
+                    'Uzun ömürlü çözümler'
+                ],
+                price: 'm² bazlı fiyatlandırma',
+                duration: '2-5 gün',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'teras-yalitimi': {
+                title: 'Teras Yalıtımı',
+                subtitle: 'Teras Su Yalıtım Sistemleri',
+                description: 'Teras yalıtım uygulamaları ile teraslarınızı su geçirmez hale getiriyoruz.',
+                features: [
+                    'Teras su yalıtımı',
+                    'Bitümlü membran uygulaması',
+                    'Polimerik membran',
+                    'Detay yalıtımı',
+                    'Kaliteli malzeme',
+                    'Uzun ömürlü çözüm'
+                ],
+                price: 'm² bazlı fiyatlandırma',
+                duration: '1-3 gün',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'dilatasyon-yalitimi': {
+                title: 'Dilatasyon Yalıtımı',
+                subtitle: 'Dilatasyon Derzi Yalıtım Uygulamaları',
+                description: 'Dilatasyon derzi yalıtım uygulamaları ile yapılarınızın hareket noktalarını koruyoruz.',
+                features: [
+                    'Dilatasyon derzi yalıtımı',
+                    'Elastik yalıtım malzemeleri',
+                    'Detay uygulaması',
+                    'Hareket toleransı',
+                    'Kaliteli malzeme',
+                    'Uzun ömürlü çözüm'
+                ],
+                price: 'Metre bazlı fiyatlandırma',
+                duration: '1-2 gün',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'islak-hacim-yalitimi': {
+                title: 'Islak Hacım Yalıtımı',
+                subtitle: 'Banyo/WC Su Yalıtım Uygulamaları',
+                description: 'Banyo ve WC alanlarında su yalıtım uygulamaları ile sızıntıları önlüyoruz.',
+                features: [
+                    'Banyo su yalıtımı',
+                    'WC su yalıtımı',
+                    'Duş kabini yalıtımı',
+                    'Küvet yalıtımı',
+                    'Detay yalıtımı',
+                    'Kaliteli malzeme'
+                ],
+                price: 'm² bazlı fiyatlandırma',
+                duration: '1-2 gün',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'perde-yalitimi': {
+                title: 'Perde Yalıtımı',
+                subtitle: 'Perde Su Yalıtım Sistemleri',
+                description: 'Perde su yalıtım uygulamaları ile yapılarınızın dış duvarlarını koruyoruz.',
+                features: [
+                    'Perde su yalıtımı',
+                    'Bitümlü membran',
+                    'Polimerik membran',
+                    'Detay yalıtımı',
+                    'Kaliteli malzeme',
+                    'Uzun ömürlü çözüm'
+                ],
+                price: 'm² bazlı fiyatlandırma',
+                duration: '2-4 gün',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'enjeksiyon-uygulamasi': {
+                title: 'Enjeksiyon Uygulaması',
+                subtitle: 'Profesyonel Enjeksiyon Yalıtım Hizmetleri',
+                description: 'Enjeksiyon yalıtım uygulamaları ile mevcut yapılarda su sızıntılarını durduruyoruz.',
+                features: [
+                    'Enjeksiyon yalıtımı',
+                    'Kimyasal enjeksiyon',
+                    'Poliüretan enjeksiyon',
+                    'Akrilik enjeksiyon',
+                    'Detay uygulaması',
+                    'Hızlı çözüm'
+                ],
+                price: 'Proje bazlı fiyatlandırma',
+                duration: '1-2 gün',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'beton-silim': {
+                title: 'Beton Silim',
+                subtitle: 'Kaba, Orta ve İnce Beton Silim İşlemleri',
+                description: 'Beton silim uygulamaları ile beton yüzeylerinizi düzgün ve pürüzsüz hale getiriyoruz.',
+                features: [
+                    'Kaba beton silim',
+                    'Orta beton silim',
+                    'İnce beton silim',
+                    'Profesyonel ekipman',
+                    'Kaliteli işçilik',
+                    'Pürüzsüz yüzey'
+                ],
+                price: 'm² bazlı fiyatlandırma',
+                duration: '1-3 gün',
+                image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'epoksi-zemin-kaplama': {
+                title: 'Epoksi Zemin Kaplama',
+                subtitle: 'Portakal Desen ve Self Leveling Uygulamaları',
+                description: 'Epoksi zemin kaplama uygulamaları ile zeminlerinizi dayanıklı ve estetik hale getiriyoruz.',
+                features: [
+                    'Portakal desen uygulaması',
+                    'Self leveling uygulamaları',
+                    'Epoksi zemin kaplama',
+                    'Endüstriyel uygulama',
+                    'Kimyasal dayanım',
+                    'Kolay temizlik'
+                ],
+                price: 'm² bazlı fiyatlandırma',
+                duration: '2-4 gün',
+                image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            },
+            'epoksi-boya': {
+                title: 'Epoksi Boya Uygulamaları',
+                subtitle: 'Profesyonel Epoksi Boya Hizmetleri',
+                description: 'Epoksi boya uygulamaları ile yüzeylerinizi dayanıklı ve estetik hale getiriyoruz.',
+                features: [
+                    'Epoksi boya uygulaması',
+                    'Endüstriyel boya',
+                    'Kimyasal dayanım',
+                    'UV dayanımı',
+                    'Kolay temizlik',
+                    'Uzun ömürlü'
+                ],
+                price: 'm² bazlı fiyatlandırma',
+                duration: '1-2 gün',
+                image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            }
+        };
+
+        // Service card click handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceCards = document.querySelectorAll('.service-card');
+            
+            serviceCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Remove active class from all cards
+                    serviceCards.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked card
+                    this.classList.add('active');
+                    
+                    // Get service data
+                    const serviceId = this.dataset.service;
+                    const service = servicesData[serviceId];
+                    
+                    // Update service details
+                    document.getElementById('service-title').textContent = service.title;
+                    document.getElementById('service-subtitle').textContent = service.subtitle;
+                    document.getElementById('service-description').textContent = service.description;
+                    document.getElementById('service-image').src = service.image;
+                    
+                    // Update features
+                    const featuresContainer = document.getElementById('service-features');
+                    featuresContainer.innerHTML = '';
+                    service.features.forEach(feature => {
+                        const featureItem = document.createElement('div');
+                        featureItem.className = 'feature-item';
+                        featureItem.innerHTML = `
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                            ${feature}
+                        `;
+                        featuresContainer.appendChild(featureItem);
+                    });
+                    
+                    // Smooth scroll to detailed service section
+                    const detailedServiceSection = document.querySelector('.detailed-service');
+                    if (detailedServiceSection) {
+                        detailedServiceSection.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Scroll buttons functionality
+            const scrollLeftBtn = document.getElementById('scrollLeft');
+            const scrollRightBtn = document.getElementById('scrollRight');
+            const servicesGrid = document.getElementById('servicesGrid');
+            
+            function updateScrollButtons() {
+                const isAtStart = servicesGrid.scrollLeft <= 0;
+                const isAtEnd = servicesGrid.scrollLeft >= (servicesGrid.scrollWidth - servicesGrid.clientWidth);
+                
+                scrollLeftBtn.disabled = isAtStart;
+                scrollRightBtn.disabled = isAtEnd;
+            }
+            
+            scrollLeftBtn.addEventListener('click', () => {
+                servicesGrid.scrollBy({
+                    left: -200,
+                    behavior: 'smooth'
+                });
+            });
+            
+            scrollRightBtn.addEventListener('click', () => {
+                servicesGrid.scrollBy({
+                    left: 200,
+                    behavior: 'smooth'
+                });
+            });
+            
+            servicesGrid.addEventListener('scroll', updateScrollButtons);
+            
+            // Initial button state
+            updateScrollButtons();
+        });
+    </script>
+    <script src="mobile-menu.js"></script>
+</body>
+</html>
